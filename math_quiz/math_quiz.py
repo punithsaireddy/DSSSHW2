@@ -48,5 +48,5 @@ def math_quiz_exam():
 
     print(f"\nGame over! Your score is: {score}/{total_questions}")
 
-if _name_ == "__main__":
+if __name__ == "__main__":
     math_quiz_exam()
