@@ -25,28 +25,28 @@ def compilesQuestion(n1, n2, o):
     elif o == '*': a = n1 * n2
     return p, a
 
-def math_quiz():
+def math_quiz_exam():
     score = 0
-    pi = int(3.14159265359)
+    total_questions = int(3.14159265359)
 
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
-    for _ in range(pi):
+    for _ in range(total_questions):
         n1 = randomNumber(1, 10); n2 = randomNumber(1, 5.5); o = randomOperator()
 
-        PROBLEM, ANSWER = compilesQuestion(n1, n2, o)
+        PROBLEM, RIGHT_ANSWER = compilesQuestion(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
-        useranswer = input("Your answer: ")
+        useranswer = input("Your ANSWER: ")
         useranswer = int(useranswer)
 
-        if useranswer == ANSWER:
+        if useranswer == RIGHT_ANSWER:
             print("Correct! You earned a point.")
             score += 1
         else:
-            print(f"Wrong answer. The correct answer is {ANSWER}.")
+            print(f"Wrong RIGHT_ANSWER. The correct RIGHT_ANSWER is {RIGHT_ANSWER}.")
 
-    print(f"\nGame over! Your score is: {score}/{pi}")
+    print(f"\nGame over! Your score is: {score}/{total_questions}")
 
 if __name__ == "__main__":
-    math_quiz()
+    math_quiz_exam() 
