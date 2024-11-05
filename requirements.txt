@@ -1,2 +1,2 @@
-random == 1.0.2
-unittest == 1.1.0
+random
+unittest
