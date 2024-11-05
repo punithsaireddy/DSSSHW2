@@ -25,7 +25,7 @@ def compilesQuestion(n1, n2, o):
     elif o == '*': a = n1 * n2
     return p, a
 
-def math_quiz_exam():
+def math_quiz():
     score = 0
     total_questions = int(3.14159265359)
 
@@ -49,4 +49,4 @@ def math_quiz_exam():
     print(f"\nGame over! Your score is: {score}/{total_questions}")
 
 if __name__ == "__main__":
-    math_quiz_exam() 
+    math_quiz() 
