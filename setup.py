@@ -1,5 +1,8 @@
-from pip.req import parse_requirements
 from setuptools import setup, find_packages
+
+def parse_requirements(filename):
+    with open(filename) as f:
+        return f.read().splitlines()
 
 setup(
     name="math_quiz", 
