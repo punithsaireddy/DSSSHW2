@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+from math_quiz import math_quiz_exam
 
 setup(
     name='math_quiz',
