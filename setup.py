@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'math_quiz = math_quiz.math_quiz:math_quiz_exam',
+            'math_exam = math_quiz.math_quiz:math_quiz_exam',
         ],
     },
     python_requires='>=3.6',
